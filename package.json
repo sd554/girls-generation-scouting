@@ -1,0 +1,20 @@
+{
+  "name": "electron-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta",
+    "fs-extra": "^4.0.2",
+    "jquery": "^3.2.1",
+    "scouting": "^2.0.1"
+  },
+  "devDependencies": {
+    "electron-prebuilt": "^0.35.2"
+  },
+  "scripts": {
+    "start": "electron main.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
