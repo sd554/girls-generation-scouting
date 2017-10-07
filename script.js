@@ -4,8 +4,9 @@ var scout = require("scouting")
 scout.init('stand')
 
 scout.page('Login',[12]);
-scout.page('Auto',[12]);
+scout.page('Auto',[4,4,4]);
 scout.page('Tele',[4,4,4]);
+scout.page('Post Match',[6,6]);
 scout.page('Save',[12]);
 
 scout.login('.cell-login-1');
@@ -22,7 +23,7 @@ scout.multipleChoice(
 );
 
 scout.multipleChoice(
-	'.cell-auto-1',
+	'.cell-auto-2',
 	'Gear',
 	[
 		['yes', 'success'],
@@ -33,7 +34,7 @@ scout.multipleChoice(
 );
 
 scout.multipleChoice(
-	'.cell-auto-1',
+	'.cell-auto-3',
 	'Shoot',
 	[
 		['yes', 'success'],
@@ -73,7 +74,7 @@ scout.counter(
 );
 
 scout.multipleChoice(
-	'.cell-tele-1',
+	'.cell-post-match-1',
 	'Defense',
 	[
 		['strong', 'success'],
@@ -85,7 +86,7 @@ scout.multipleChoice(
 );
 
 scout.multipleChoice(
-	'.cell-tele-2',
+	'.cell-post-match-2',
 	'Driver Skill',
 	[
 		['strong', 'success'],
